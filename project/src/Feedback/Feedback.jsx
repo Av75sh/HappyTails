@@ -12,7 +12,7 @@ const Feedback = () => {
       name: 'Ankit Yadav',
       location: 'Uttar Pradesh, India',
       image: ankit,
-      text: '"I can\'t thank HappyTails enough for the wonderful care they provided to my dog, Max. The moment we walked in, it was clear that this place is special. The staff treated Max like family, and the updates they sent during his stay kept my heart at ease. He came back happy and well-cared-for."'
+      text: '"I can\'t thank HappyTails enough for the wonderful care they provided to my dog, Simba. The moment we walked in, it was clear that this place is special. The staff treated Simba like family, and the updates they sent during his stay kept my heart at ease. He came back happy and well-cared-for."'
     },
     {
       id: 2,

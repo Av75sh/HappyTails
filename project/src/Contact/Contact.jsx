@@ -1,6 +1,7 @@
 import React from 'react';
 import './contact.css';
 import avinash from '../assets/avinash.jpg';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 function Contact() {

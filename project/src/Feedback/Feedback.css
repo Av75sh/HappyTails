@@ -84,16 +84,6 @@
     margin: 0;
   }
   
-  .leaf-decoration {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%238cc63f" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>');
-    opacity: 0.1;
-    transform: rotate(45deg);
-  }
   
   @media (max-width: 768px) {
     .feedback-title {

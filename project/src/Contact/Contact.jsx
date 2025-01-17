@@ -1,5 +1,7 @@
 import React from 'react';
 import './contact.css';
+import avinash from '../assets/avinash.jpg';
+
 
 function Contact() {
   return (
@@ -7,11 +9,11 @@ function Contact() {
       <div className="top-section">
         <div className="content-wrapper">
           <h1>Your Pet's Dream Stay Awaits</h1>
-          <h2>Contact <span className="highlight">Petopia</span> Today</h2>
+          <h2>Contact <span className="highlight">HappyTails</span> Today</h2>
           <p>Reach Out to Reserve Your Pet's Spot</p>
           <div className="button-group">
             <button className="btn contact-btn">Contact Us</button>
-            <button className="btn reserve-btn">Book Hotel Now</button>
+            <button className="btn reserve-btn">Book Appointment</button>
           </div>
         </div>
       </div>
@@ -19,9 +21,10 @@ function Contact() {
       <div className="bottom-section">
         <div className="footer-content">
           <div className="footer-left">
-            <div className="logo">
-              <img src="/path-to-your-logo.png" alt="Petopia Logo" />
-            </div>
+          <div className="logo">
+                  <img src={avinash} alt="HappyTails Logo" />
+                  </div>
+
             <p className="tagline">We strive to provide a luxurious and personalized experience for your furry companion.</p>
           </div>
 
@@ -34,7 +37,7 @@ function Contact() {
             </nav>
             <div className="contact-info">
               <h3>Contact Us</h3>
-              <a href="mailto:Info@Petopiahotel.com">Info@Petopiahotel.com</a>
+              <a href="mailto:Info@Petopiahotel.com">@HappyTails.com</a>
             </div>
           </div>
 
@@ -55,7 +58,7 @@ function Contact() {
 
         <div className="footer-bottom">
           <div className="divider"></div>
-          <p>© Petopia Pet Hotels 2023. Made by gintara studio</p>
+          <p>© HappyTails Pet Hotels 2025. Made by Avinash Singh</p>
         </div>
       </div>
     </div>

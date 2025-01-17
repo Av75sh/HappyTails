@@ -8,7 +8,7 @@ const Packages = () => {
     {
       title: 'Standard Comfort',
       subtitle: 'Cozy Paws',
-      price: '40',
+      price: '2000',
       features: [
         'Standard Suite',
         'Nutritious Meals',
@@ -19,7 +19,7 @@ const Packages = () => {
     {
       title: 'Deluxe Relaxation',
       subtitle: 'Tranquil Tails',
-      price: '60',
+      price: '3000',
       features: [
         'Deluxe Suite',
         'Gourmet Meals',
@@ -30,7 +30,7 @@ const Packages = () => {
     {
       title: 'Ultimate Pampering',
       subtitle: 'Pampered Paws',
-      price: '90',
+      price: '5000',
       features: [
         'Premium Suite',
         'Customized Activity Plan',
@@ -44,7 +44,7 @@ const Packages = () => {
     <section className="packages-section">
       <div className="packages-header">
         <h3 className="packages-subtitle">OUR PACKAGES</h3>
-        <h1 className="packages-title">Petopia's Pawsome Pricing Packages</h1>
+        <h1 className="packages-title">HappyTails's Pawsome Pricing Packages</h1>
         <p className="packages-description">Elevate Your Pet's Stay with Our Premium Offerings</p>
       </div>
 
@@ -57,9 +57,9 @@ const Packages = () => {
           >
             <h2 className="package-title">{pkg.title}</h2>
             <div className="price-container">
-              <span className="currency">$</span>
+              <span className="currency">₹</span>
               <span className="price">{pkg.price}</span>
-              <span className="period">/night</span>
+              <span className="period">/day</span>
             </div>
             <h3 className="package-subtitle">{pkg.subtitle}</h3>
             <ul className="features-list">

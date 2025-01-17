@@ -1,0 +1,117 @@
+.services-section {
+    background: url('/images/pet-services-bg.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 60px 20px;
+    position: relative;
+    background-color: #E8F4FF;
+  }
+  
+  .services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services-header {
+    margin-bottom: 60px;
+  }
+  
+  .services-label {
+    color: #FF7043;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .services-title {
+    font-size: 48px;
+    color: #1A237E;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #FF7043;
+  }
+  
+  .services-description {
+    color: #424242;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .see-more-btn {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .see-more-btn:hover {
+    background-color: #F4511E;
+  }
+  
+  .services-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .service-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background: #F5F5F5;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-icon img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  
+  .service-card h3 {
+    color: #1A237E;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    color: #616161;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .services-cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .services-title {
+      font-size: 36px;
+    }
+    
+    .services-description {
+      font-size: 16px;
+    }
+  }

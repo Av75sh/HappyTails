@@ -1,0 +1,110 @@
+.feedback-container {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feedback-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .testimonial-tag {
+    color: #8cc63f;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feedback-title {
+    color: #1b365d;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #ff7f50;
+  }
+  
+  .feedback-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .testimonial-card {
+    background-color: #f0f7ff;
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .testimonial-text {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-author h3 {
+    color: #1b365d;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+  
+  .testimonial-author p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .leaf-decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%238cc63f" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>');
+    opacity: 0.1;
+    transform: rotate(45deg);
+  }
+  
+  @media (max-width: 768px) {
+    .feedback-title {
+      font-size: 2rem;
+    }
+    
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+      padding: 1.5rem;
+    }
+  }

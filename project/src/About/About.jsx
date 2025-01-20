@@ -32,7 +32,7 @@ function About() {
           </h1>
           
           <p className="description">
-            We strive to provide a luxurious and personalized
+            We strive to provide luxurious and personalized
             experience for your furry companion.
           </p>
 

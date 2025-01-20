@@ -39,6 +39,7 @@ const Packages = () => {
       ]
     }
   ];
+  
 
   return (
     <section className="packages-section">

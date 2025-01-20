@@ -9,9 +9,11 @@ function Contact() {
     <div className="contact-container">
       <div className="top-section">
         <div className="content-wrapper">
+          <div className="context-center">
           <h1>Your Pet's Dream Stay Awaits</h1>
           <h2>Contact <span className="highlight">HappyTails</span> Today</h2>
           <p>Reach Out to Reserve Your Pet's Spot</p>
+          </div>
           <div className="button-group">
             <button className="btn contact-btn">Contact Us</button>
             <button className="btn reserve-btn">Book Appointment</button>

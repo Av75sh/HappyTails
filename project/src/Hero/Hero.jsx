@@ -25,14 +25,14 @@ const Hero = () => {
 
   return (
     <main className="hero">
-      <div className="hero-content">
+      {/* <div className="hero-content">
         <h1>Uniting Hearts and Paws<br />in a Haven of Love</h1>
         <p>We embrace Your Pets as family, nurturing their well-being and<br />happiness with tender care and expertise</p>
         <button className="reservation-btn">
           Reservation Now
           <span className="paw-icon">🐾</span>
         </button>
-      </div>
+      </div> */}
 
       {/* Carousel Image */}
       <div className="hero-carousel">

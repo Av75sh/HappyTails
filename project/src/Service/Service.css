@@ -1,18 +1,24 @@
 .services-section {
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
     background: url('/images/pet-services-bg.jpg') no-repeat center center;
     background-size: cover;
     min-height: 100vh;
     padding: 60px 20px;
     position: relative;
-    background-color: #E8F4FF;
+    background-color: white;
   }
   
   .services-content {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   
   .services-header {
+    max-width: 1400px;
+    padding: 0 25px;
     margin-bottom: 60px;
   }
   

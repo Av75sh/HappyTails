@@ -47,6 +47,7 @@
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s;
+    object-fit: contain;
   }
   
   .category-item:hover {

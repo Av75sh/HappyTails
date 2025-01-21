@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Product.css';
-
+import cat2 from '../assets/cat2.jpg';
+import dogs2 from '../assets/dogs.jpg';
 
 const products = [
   {
@@ -16,7 +17,7 @@ const products = [
     name: "Luxury Cat Food",
     price: 24.99,
     category: "Cats",
-    image: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=500&auto=format",
+    image: cat2,
     rating: 4.8
   },
   {
@@ -177,11 +178,11 @@ const products = [
 const categories = [
   {
     name: "Dogs",
-    image: "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=150&h=150&auto=format"
+    image: dogs2
   },
   {
     name: "Cats",
-    image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=150&h=150&auto=format"
+    image: cat2
   },
   {
     name: "Rabbits",

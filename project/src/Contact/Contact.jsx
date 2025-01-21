@@ -60,8 +60,9 @@ function Contact() {
         </div>
 
         <div className="footer-bottom">
-          <div className="divider"></div>
+          <div className="divider">
           <p>© HappyTails Pet Hotels 2025. Made by Avinash Singh</p>
+          </div>
         </div>
       </div>
     </div>

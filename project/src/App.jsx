@@ -11,6 +11,7 @@ import Packages from './Packages/Packages';
 import Feedback from './Feedback/Feedback';
 import Contact from './Contact/Contact';
 import Reward from './reward/reward';
+import Products from './Product/Product';
 
 function App() {
   return (
@@ -30,9 +31,9 @@ function App() {
           } 
         />
      
-        <Route path="/about" element={<> <About /> <Contact /> </>} />
+        
         <Route path="/service" element={<> <Service /> <Contact /> </>} />
-        <Route path="/packages" element={<> <Packages /> <Contact /> </>} />
+        <Route path="/products" element={<> <Products /> <Contact /> </>} />
         <Route path="/reward" element={<> <Reward /> <Contact /> </>} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

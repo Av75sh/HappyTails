@@ -64,7 +64,7 @@
     transform: translateY(-2px);
   }
   
-  .contact-btn {
+  .contact-btn3 {
     background-color: #0B2A49;
     color: white;
   }
@@ -143,6 +143,10 @@
   .footer-bottom {
     max-width: 1400px;
     margin: 3rem auto 0;
+  }
+  
+  .tagline {
+    color: white;
   }
   
   .divider {

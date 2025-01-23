@@ -4,7 +4,9 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import Navbar from './Navbar/Navbar'; 
-import Hero from './Hero/Hero'; 
+
+
+import Front from './Front/Front';
 import About from './About/About';
 import Service from './Service/Service';
 import Packages from './Packages/Packages';
@@ -21,7 +23,7 @@ function App() {
       
         <Route path="/" element={
             <>
-              <Hero />
+              <Front />
               <About />
               <Service />
               <Packages />

@@ -31,6 +31,7 @@ const Feedback = () => {
   ];
 
   return (
+    <div className="feedback2">
     <div className="feedback-container">
       <div className="feedback-header">
         <div className="testimonial-tag">OUR TESTIMONIAL</div>
@@ -57,6 +58,7 @@ const Feedback = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

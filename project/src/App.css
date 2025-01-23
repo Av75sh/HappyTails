@@ -1,3 +1,6 @@
+.navdiv {
+  background-color: black;
+}
 
 .app {
   min-height: 100vh;
@@ -7,6 +10,7 @@
 }
 
 .navbar {
+  background-color: black;
   box-sizing: border-box;
   max-width: 1400px;
   margin: 0 auto;
@@ -22,7 +26,7 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1a1a1a;
+  color: white;
 }
 
 .nav-links {
@@ -32,20 +36,26 @@
 }
 
 .nav-links a {
-  color: #1a1a1a;
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
 #contact{
-  color: white !important;
+  color: black !important;
 }
 .contact-btn {
-  background-color: black !important; 
+  background-color: white !important; 
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   cursor: pointer;
+}
+
+/* Hero images 
+.hero-carousel {
+  width: auto; /* Adjust width 
+  height: auto; /* Maintain aspect ratio 
 }
 
 .hero {
@@ -80,6 +90,7 @@
   line-height: 1.6;
 }
 
+*/
 .reservation-btn {
   background-color: #1a4d2e;
   color: white;
@@ -102,8 +113,4 @@
   font-size: 1.2rem;
 }
 
-/* Hero images */
-.hero-carousel {
-  width: auto; /* Adjust width */
-  height: auto; /* Maintain aspect ratio */
-}
+

@@ -1,51 +1,27 @@
+#about-image {
+  width: 520px;
+  height: 520px;
+}
 
-/*  About us code */ 
-.window-scene {
-    position: relative;
-    min-height: 300px;
-    background: linear-gradient(to bottom, #E8F4FF 0%, #E8F4FF 60%, #f0f0f0 60%, #f0f0f0 100%);
-  }
-  
-  .cat-tree {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    width: 120px;
-    height: 200px;
-    background-color: #2D7A4C;
-    border-radius: 8px;
-  }
-  
-  .cat-tree::before {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 140px;
-    height: 20px;
-    background-color: #FF8B3D;
-    border-radius: 4px;
-  }
-  
-  
+.happy {
+  font-weight: bold;
+}
 
 .about-container {
     min-height: 100vh;
-    background-color: #E8F4FF;
+    background-color: white;
   }
   
   .about-content {
   box-sizing: border-box;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 1rem;
+   
   }
   
   @media (min-width: 768px) {
@@ -54,25 +30,7 @@
     }
   }
   
-  .illustration {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  
-  @media (min-width: 768px) {
-    .illustration {
-      width: 50%;
-      margin-bottom: 0;
-    }
-  }
-  
-  .illustration-inner {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .about-text {
     width: 100%;
   }
@@ -88,14 +46,14 @@
     color: #9DC45F;
     font-weight: 600;
     font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .main-heading {
     color: #0A2647;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .main-heading .highlight {
@@ -104,13 +62,14 @@
   
   .description {
     color: #0A2647;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
   
   .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin-bottom: 0;
   }
   
   .feature-item {

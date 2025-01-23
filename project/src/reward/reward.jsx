@@ -19,6 +19,7 @@ const Reward = () => {
           <h2 className="ai-teacher-text">PetCare </h2>
         </div>
         
+        
         <div className="iphone-container">
           <div className="iphone-frame">
             <div className="notch"></div>

@@ -15,7 +15,7 @@ function Contact() {
           <p>Reach Out to Reserve Your Pet's Spot</p>
           </div>
           <div className="button-group">
-            <button className="btn contact-btn">Contact Us</button>
+            <button className="btn contact-btn3">Contact Us</button>
             <button className="btn reserve-btn">Book Appointment</button>
           </div>
         </div>

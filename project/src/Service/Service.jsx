@@ -3,6 +3,7 @@ import pet4 from '../assets/pet4.jpg';
 
 const Service = () => {
   return (
+    <div className="services2">
     <section className="services-section">
       <div className="services-content">
         <div className="services-header">
@@ -54,6 +55,7 @@ const Service = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

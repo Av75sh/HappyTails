@@ -1,47 +1,62 @@
-import { useState } from 'react'
 import './Front.css'
+import front1 from '../assets/front1.avif';
+import front2 from '../assets/front2.avif';
+import front3 from '../assets/front3.avif';
+
+import dhruv from '../assets/dhruv.png';
+import abhinav from '../assets/abhinav.png';
+import ankit from '../assets/ankit.png';
+import anup from '../assets/anup.png';
+import avinash from '../assets/avinash.jpg';
 
 function Front() {
-  const handleWatchVideo = () => {
-    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')
-  }
-
   return (
+    <div className="front">
     <div className="container">
-      <div className="header-text">
-        <h1>Unwavering Pet Care</h1>
-        <h1>For Your Furry Friend</h1>
-        <h1>Everyday, All Day!</h1>
+      <div className="main-content2">
+        <div className="text-content">
+          <h1>Providing a Stress-Free<br />Pets Experience</h1>
+          <p>We offer a range of services to ensure your pets receive<br />the best care possible.</p>
+          
+          <div className="cta-section2">
+            <button className="book-now-btn2">Book Now</button>
+            
+            <button className="watch-intro-btn2"
+              onClick ={() => window.open('https://www.youtube.com/' , '_blank')}>
+              <span className="play-icon2">▶</span>
+              Watch Intro
+            </button>
+
+          </div>
+        </div>
+
+        <div className="circular-images">
+          <div className="circle large" style={{ 
+            backgroundImage: `url(${front1})`,
+            backgroundColor: "#9FD89F"
+          }}></div>
+          <div className="circle medium" style={{ 
+            backgroundImage: `url(${front2})`,
+            backgroundColor: "#FFE5A3"
+          }}></div>
+          <div className="circle small" style={{ 
+            backgroundImage: `url(${front3})`,
+            backgroundColor: "#FFFFFF"
+          }}></div>
+        </div>
       </div>
 
-      <div className="actions">
-        <button className="read-more-btn">Read More</button>
-        <a href="#" className="watch-video" onClick={handleWatchVideo}>
-          <span className="youtube-icon">▶</span>
-          Watch Video
-        </a>
+      <div className="trust-container">
+        <div className="profile-images">
+          <img src= {dhruv} alt="Profile 1" />
+          <img src= {abhinav} alt="Profile 2" />
+          <img src= {ankit} alt="Profile 3" />
+          <img src= {anup} alt="Profile 4" />
+          <img src= {avinash} alt="Profile 5" />
+        </div>
+        <p>Trusted by over 2,000+ clients worldwide since 2025</p>
       </div>
-
-      <div className="dog-images">
-        <div className="pet-image">
-          <img 
-            src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=600"
-            alt="Cool cat with sunglasses"
-          />
-        </div>
-        <div className="pet-image o">
-          <img 
-            src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600"
-            alt="Dog with pink glasses"
-          />
-        </div>
-        <div className="pet-image">
-          <img 
-            src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600"
-            alt="Cat with glasses"
-          />
-        </div>
-      </div>
+    </div>
     </div>
   )
 }

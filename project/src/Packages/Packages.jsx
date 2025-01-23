@@ -42,6 +42,7 @@ const Packages = () => {
   
 
   return (
+    <div className="package2">
     <section className="packages-section">
       <div className="packages-header">
         <h3 className="packages-subtitle">OUR PACKAGES</h3>
@@ -73,6 +74,7 @@ const Packages = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 

@@ -67,6 +67,7 @@
   border-radius: 24px;
   padding: 2rem;
   width: 400px;
+  margin-left: 35px;
 }
 
 .iphone-frame {
@@ -94,7 +95,7 @@
 .screen {
   background: white;
   border-radius: 40px;
-  height: 700px;
+  height: 600px;
   position: relative;
   overflow: hidden;
   padding: 40px 20px 20px;
@@ -151,8 +152,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 3rem;
+  right: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 

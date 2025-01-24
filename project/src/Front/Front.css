@@ -108,12 +108,12 @@ p {
 }
 
 .trust-container {
+  max-width: 600px;
   background-color: white;
-  margin-top: 0.01rem;
+  margin-bottom: 5rem;
   padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  max-width: 490px;
 }
 
 .profile-images {

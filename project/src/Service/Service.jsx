@@ -1,4 +1,6 @@
 import './service.css';
+
+import pet3 from '../assets/pet3.jpg';
 import service1 from '../assets/service1.webp';
 import service2 from '../assets/service2.png';
 import service3 from '../assets/service3.jpg';
@@ -13,24 +15,28 @@ const Service = () => {
     <section className="services-section">
       <div className="services-content">
 
-        <div className="services-header">
-          <span className="services-label">SERVICES</span>
 
-          <h2 className="services-title">
-            A Haven of <span className="highlight">Indulgence</span><br />
-            and <span className="highlight">Customized</span> Pet<br />
-            Services
+      <div className="services-header-container">
+  <div className="services-header">
+    <span className="services-label">SERVICES</span>
+    <h2 className="services-title">
+      A Haven of <span className="highlight">Indulgence</span><br />
+      and <span className="highlight">Customized</span> Pet<br />
+      Services
+    </h2>
+    <p className="services-description">
+      We strive to provide a luxurious and personalized experience<br />
+      for your furry companion.
+    </p>
+    <button className="see-more-btn">See More</button>
+  </div>
+  <div className="services-image">
+    <img src= {pet3} alt="services" />
+  </div>
+</div>
 
-            {/* <img src={service4} alt="Grooming Treatments" /> */}
 
-          </h2>
-          <p className="services-description">
-            We strive to provide a luxurious and personalized experience<br />
-            for your furry companion.
-          </p>
-          <button className="see-more-btn">See More</button>
-          {/* <img src={service2} alt="Grooming Treatments" /> */}
-        </div>
+
 
         <div className="services-cards">
           <div className="service-card">

@@ -1,16 +1,18 @@
-import { useState } from 'react';
-import './Product.css';
-import { products, categories } from '../Product/Product2';
+import { useState } from "react";
+import "./Product.css";
+import { products, categories } from "../Product/Product2";
+import { useCart } from "../Cart/CartContext"; 
 
 function Product() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All'); // Default to "All"
+  const { addToCart } = useCart();
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All"); 
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 9;
 
-  const filteredProducts = products.filter(product => {
+  const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
+    const matchesCategory = selectedCategory === "All" || product.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
@@ -24,8 +26,9 @@ function Product() {
     alert(`Navigating to product ${productId}`);
   };
 
-  const handleAddToCart = (productId) => {
-    alert(`Added product ${productId} to cart!`);
+  const handleAddToCart = (product, e) => {
+    e.stopPropagation(); 
+    addToCart(product); 
   };
 
   const handlePageChange = (pageNumber) => {
@@ -52,11 +55,11 @@ function Product() {
       </nav>
 
       <div className="categories">
-        {categories.map(category => (
+        {categories.map((category) => (
           <div
             key={category.name}
-            className={`category-item ${selectedCategory === category.name ? 'active' : ''}`}
-            onClick={() => setSelectedCategory(selectedCategory === category.name ? 'All' : category.name)}
+            className={`category-item ${selectedCategory === category.name ? "active" : ""}`}
+            onClick={() => setSelectedCategory(selectedCategory === category.name ? "All" : category.name)}
           >
             <img src={category.image} alt={category.name} />
             <p>{category.name}</p>
@@ -65,12 +68,8 @@ function Product() {
       </div>
 
       <div className="products-grid">
-        {currentProducts.map(product => (
-          <div
-            key={product.id}
-            className="product-card"
-            onClick={() => handleProductClick(product.id)}
-          >
+        {currentProducts.map((product) => (
+          <div key={product.id} className="product-card" onClick={() => handleProductClick(product.id)}>
             <img src={product.image} alt={product.name} />
             <div className="product-info">
               <h3>{product.name}</h3>
@@ -83,10 +82,7 @@ function Product() {
               <div>
                 <button
                   className="add-to-cart-btn"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleAddToCart(product.id);
-                  }}
+                  onClick={(e) => handleAddToCart(product, e)}
                 >
                   Add to Cart
                 </button>
@@ -115,14 +111,13 @@ function Product() {
               <button
                 key={pageNumber}
                 onClick={() => handlePageChange(pageNumber)}
-                className={currentPage === pageNumber ? 'active' : ''}
+                className={currentPage === pageNumber ? "active" : ""}
               >
                 {pageNumber}
               </button>
             );
           }
 
-          // Render ellipses only if needed
           if (
             (pageNumber === 2 && currentPage > 3) || 
             (pageNumber === totalPages - 1 && currentPage < totalPages - 2)
@@ -134,7 +129,7 @@ function Product() {
             );
           }
 
-          return null; // Do not render hidden pages
+          return null;
         })}
 
         <button

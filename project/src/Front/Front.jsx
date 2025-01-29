@@ -1,13 +1,13 @@
 import './Front.css'
-import front1 from '../assets/front1.avif';
-import front2 from '../assets/front2.avif';
-import front3 from '../assets/front3.avif';
+import front1 from '../aa-image/assets-front/front1.avif';
+import front2 from '../aa-image/assets-front/front2.avif';
+import front3 from '../aa-image/assets-front/front3.avif';
 
-import dhruv from '../assets/dhruv.png';
-import abhinav from '../assets/abhinav.png';
-import ankit from '../assets/ankit.png';
-import anup from '../assets/anup.png';
-import avinash from '../assets/avinash.jpg';
+import dhruv from '../aa-image/assets-feed/dhruv.png';
+import abhinav from '../aa-image/assets-feed/abhinav.png';
+import ankit from '../aa-image/assets-feed/ankit.png';
+import anup from '../aa-image/assets-feed/anup.png';
+import avinash from '../aa-image/assets-feed/avinash.jpg';
 
 function Front() {
   return (

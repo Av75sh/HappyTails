@@ -1,12 +1,12 @@
 import './service.css';
 
-import pet3 from '../assets/pet3.jpg';
-import service1 from '../assets/service1.webp';
-import service2 from '../assets/service2.png';
-import service3 from '../assets/service3.jpg';
-import service4 from '../assets/service4.png';
-import service5 from '../assets/service5.png';
-import service6 from '../assets/service6.jpg';
+import pet3 from '../aa-image/assets/pet3.jpg';
+import service1 from '../aa-image/assets-service/service1.webp';
+import service2 from '../aa-image/assets-service/service2.png';
+import service3 from '../aa-image/assets-service/s3.jpg';
+import service4 from '../aa-image/assets-service/service4.png';
+import service5 from '../aa-image/assets-service/service5.png';
+import service6 from '../aa-image/assets-service/service6.jpg';
 
 
 const Service = () => {
@@ -44,7 +44,7 @@ const Service = () => {
               <img src= {service1} alt="Luxury Accommodations" />
             </div>
             <h3>Pet Products</h3>
-            <p>Treat your furry friend to a stay in our spacious and comfortable suites designed</p>
+            <p>Discover a range of premium pet products, including toys, food, and accessories, designed to keep your furry friend happy, healthy, and comfortable.</p>
           </div>
 
           <div className="service-card">
@@ -52,7 +52,7 @@ const Service = () => {
               <img src={service2} alt="Grooming Treatments" />
             </div>
             <h3>Grooming Treatments</h3>
-            <p>Pamper your pet with our professional grooming services</p>
+            <p>Pamper your pet with our professional grooming services, ensuring they look and feel their best with a clean coat, trimmed nails, and a refreshed demeanor.</p>
           </div>
 
           <div className="service-card">
@@ -60,7 +60,7 @@ const Service = () => {
               <img src={service3} alt="Playtime and Enrichment" />
             </div>
             <h3>Playtime and Enrichment</h3>
-            <p>Our facility offers dedicated play areas where pets can participate in play sessions</p>
+            <p>Engage your pet with fun, interactive playtime sessions and enrichment activities that stimulate their mind and body for a balanced lifestyle.</p>
           </div>
 
           <div className="service-card">
@@ -68,7 +68,7 @@ const Service = () => {
               <img src={service4} alt="Personalized Care" />
             </div>
             <h3>Personalized Care</h3>
-            <p>Our dedicated staff provides individualized attention to meet the specific needs of your pet</p>
+            <p>Tailored care plans to meet your pet's unique needs, ensuring their comfort and well-being with love and attention.</p>
           </div>
 
           <div className="service-card">
@@ -76,7 +76,7 @@ const Service = () => {
               <img src={service5} alt="Personalized Care" />
             </div>
             <h3>Pet Fitness Program</h3>
-            <p>Our dedicated staff provides individualized attention to meet the specific needs of your pet</p>
+            <p>Keep your pet active and healthy with our specially designed fitness programs, promoting physical wellness and a longer, happier life.</p>
           </div>
 
           <div className="service-card">
@@ -84,7 +84,7 @@ const Service = () => {
               <img src={service6} alt="Personalized Care" />
             </div>
             <h3>Pet Social Events</h3>
-            <p>Our dedicated staff provides individualized attention to meet the specific needs of your pet</p>
+            <p>Bring your pets together to socialize and have fun at our exclusive pet-friendly events, fostering community and companionship.</p>
           </div>
         </div>
       </div>

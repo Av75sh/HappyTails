@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { CartProvider } from './Cart/CartContext';
 
 import './App.css';
 import './index.css';
 import Navbar from './Navbar/Navbar'; 
- 
 import Front from './Front/Front';
 import About from './About/About';
 import Service from './Service/Service';
@@ -15,11 +15,15 @@ import Reward from './reward/reward';
 import Products from './Product/Product';
 
 function App() {
+
   return (
     <div className="app">
-      <Navbar /> 
+      <CartProvider>
+      <Navbar />
+      </CartProvider>
+
+
       <Routes>
-      
         <Route path="/" element={
             <>
               <Front />

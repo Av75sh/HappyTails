@@ -1,10 +1,8 @@
 import { useState } from "react";
 import "./Product.css";
-import { products, categories } from "../Product/Product2";
-import { useCart } from "../Cart/CartContext"; 
+import { products, categories } from "../Product/Product2"; 
 
 function Product() {
-  const { addToCart } = useCart();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All"); 
   const [currentPage, setCurrentPage] = useState(1);
@@ -26,17 +24,13 @@ function Product() {
     alert(`Navigating to product ${productId}`);
   };
 
-  const handleAddToCart = (product, e) => {
-    e.stopPropagation(); 
-    addToCart(product); 
-  };
-
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
   return (
     <div className="product-page">
+ 
       <nav className="navbar3">
         <div className="nav-content">
           <h1>Pet Shop</h1>
@@ -80,12 +74,7 @@ function Product() {
                 <span className="discount">({product.discount}% OFF)</span>
               </div>
               <div>
-                <button
-                  className="add-to-cart-btn"
-                  onClick={(e) => handleAddToCart(product, e)}
-                >
-                  Add to Cart
-                </button>
+                <button className="add-to-cart-btn">Add to Cart</button>
               </div>
               <span className="rating">★ {product.rating}</span>
             </div>
@@ -94,14 +83,11 @@ function Product() {
       </div>
 
       <div className="pagination">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
+        <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
           Previous
         </button>
-        
-        {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber, idx, arr) => {
+
+        {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => {
           if (
             pageNumber === 1 || 
             pageNumber === totalPages || 
@@ -122,20 +108,13 @@ function Product() {
             (pageNumber === 2 && currentPage > 3) || 
             (pageNumber === totalPages - 1 && currentPage < totalPages - 2)
           ) {
-            return (
-              <span key={`dots-${pageNumber}`} className="dots">
-                ...
-              </span>
-            );
+            return <span key={`dots-${pageNumber}`} className="dots">...</span>;
           }
 
           return null;
         })}
 
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-        >
+        <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
           Next
         </button>
       </div>

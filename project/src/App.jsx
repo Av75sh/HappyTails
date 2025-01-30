@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { CartProvider } from './Cart/CartContext';
+
+
 
 import './App.css';
 import './index.css';
@@ -14,14 +15,14 @@ import Contact from './Contact/Contact';
 import Reward from './reward/reward';
 import Products from './Product/Product';
 
+
 function App() {
 
   return (
     <div className="app">
-      <CartProvider>
-      <Navbar />
-      </CartProvider>
-
+       <Navbar />
+   
+        
 
       <Routes>
         <Route path="/" element={
@@ -43,6 +44,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
+    
   );
 }
 

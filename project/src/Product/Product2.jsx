@@ -91,11 +91,11 @@ import r24 from '../aa-image/assets-rabbit/r24.webp';
 
 
 const products = [
-  { id: 1, name: "Dog Toy", price: 29.99, originalPrice: 39.99, discount: 25, category: "Dogs",             image: d1,       rating: 4.5, },
+  { id: 1, name: "Hearty Oven-Baked Dry Food For Adult Dogs With Chicken, Duck & Brown Rice - All Breed", price: 250, originalPrice: 312.25, discount: 25, category: "Dogs",             image: d1,       rating: 4.5, },
   { id: 2, name: "Cat Scratcher", price: 19.99, originalPrice: 24.99, discount: 20, category: "Cats",       image: c1,    rating: 4.7, },
   { id: 3, name: "Rabbit Hutch", price: 59.99, originalPrice: 79.99, discount: 25, category: "Rabbits",     image: r1, rating: 4.6,},
   
-  { id: 4, name: "Dog Toy", price: 29.99, originalPrice: 39.99, discount: 25, category: "Dogs",             image: d2,       rating: 4.5, },
+  { id: 4, name: "HUFT Yakies Vegetarian Natural Chew Bone", price: 129, originalPrice: 154.80, discount: 20, category: "Dogs",             image: d2,       rating: 4.5, },
   { id: 5, name: "Cat Scratcher", price: 19.99, originalPrice: 24.99, discount: 20, category: "Cats",       image: c2,    rating: 4.7, },
   { id: 6, name: "Rabbit Hutch", price: 59.99, originalPrice: 79.99, discount: 25, category: "Rabbits",     image: r2, rating: 4.6,},
 

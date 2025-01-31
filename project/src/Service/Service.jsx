@@ -1,4 +1,5 @@
 import './service.css';
+import { NavLink } from 'react-router-dom';
 
 import pet3 from '../aa-image/assets/pet3.jpg';
 import service1 from '../aa-image/assets-service/service1.webp';
@@ -39,13 +40,14 @@ const Service = () => {
 
 
         <div className="services-cards">
-          <div className="service-card">
+         
+            <NavLink to="/products" className="service-card">
             <div className="card-icon">
               <img src= {service1} alt="Luxury Accommodations" />
             </div>
             <h3>Pet Products</h3>
             <p>Discover a range of premium pet products, including toys, food, and accessories, designed to keep your furry friend happy, healthy, and comfortable.</p>
-          </div>
+            </NavLink>
 
           <div className="service-card">
             <div className="card-icon">

@@ -1,4 +1,8 @@
+import Appointment from '../Form/Appointment';
 import './Front.css'
+import { NavLink } from 'react-router-dom';
+
+
 import front1 from '../aa-image/assets-front/front1.avif';
 import front2 from '../aa-image/assets-front/front2.avif';
 import front3 from '../aa-image/assets-front/front3.avif';
@@ -19,7 +23,10 @@ function Front() {
           <p>We offer a range of services to ensure your pets receive<br />the best care possible.</p>
           
           <div className="cta-section2">
+            
+            <NavLink to="/Appointment">
             <button className="book-now-btn2">Book Now</button>
+            </NavLink>
             
             <button className="watch-intro-btn2"
               onClick ={() => window.open('https://www.youtube.com/' , '_blank')}>

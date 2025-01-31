@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Product.css";
-import { products, categories } from "../Product/Product2"; 
+import { products, categories } from "../Product/Product2"; // Assuming products and categories are exported from Product2.js
 
 function Product() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -8,29 +8,42 @@ function Product() {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 9;
 
+  // Helper function to truncate product name after 5 words
+  const truncateName = (name) => {
+    const words = name.split(" ");
+    if (words.length > 7) {
+      return words.slice(0, 7).join(" ") + "...";
+    }
+    return name;
+  };
+
+  // Filter products based on search term and selected category
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === "All" || product.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
+  // Paginate products
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
 
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
+  // Handle product click (for future navigation)
   const handleProductClick = (productId) => {
     alert(`Navigating to product ${productId}`);
   };
 
+  // Handle page change
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
   return (
     <div className="product-page">
- 
+      {/* Navbar Section */}
       <nav className="navbar3">
         <div className="nav-content">
           <h1>Pet Shop</h1>
@@ -48,6 +61,7 @@ function Product() {
         </div>
       </nav>
 
+      {/* Category Filter */}
       <div className="categories">
         {categories.map((category) => (
           <div
@@ -61,16 +75,17 @@ function Product() {
         ))}
       </div>
 
+      {/* Products Grid */}
       <div className="products-grid">
         {currentProducts.map((product) => (
           <div key={product.id} className="product-card" onClick={() => handleProductClick(product.id)}>
             <img src={product.image} alt={product.name} />
             <div className="product-info">
-              <h3>{product.name}</h3>
+              <h3>{truncateName(product.name)}</h3> {/* Truncated Name */}
               <p className="category">{product.category}</p>
               <div className="price-section">
-                <span className="discount-price">${product.price.toFixed(2)}</span>
-                <span className="original-price">${product.originalPrice.toFixed(2)}</span>
+                <span className="discount-price">₹{product.price.toFixed(2)}</span>
+                <span className="original-price">₹{product.originalPrice.toFixed(2)}</span>
                 <span className="discount">({product.discount}% OFF)</span>
               </div>
               <div>
@@ -82,6 +97,7 @@ function Product() {
         ))}
       </div>
 
+      {/* Pagination */}
       <div className="pagination">
         <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
           Previous
@@ -104,6 +120,7 @@ function Product() {
             );
           }
 
+          // Add ellipsis for pages that are far away
           if (
             (pageNumber === 2 && currentPage > 3) || 
             (pageNumber === totalPages - 1 && currentPage < totalPages - 2)

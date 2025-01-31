@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-
+import Appointment from './Form/Appointment';
 
 
 import './App.css';
@@ -37,7 +37,7 @@ function App() {
           } 
         />
      
-        
+        <Route path="/Appointment" element={<> <Appointment/> </>} />
         <Route path="/service" element={<> <Service /> <Contact /> </>} />
         <Route path="/products" element={<> <Products /> <Contact /> </>} />
         <Route path="/reward" element={<> <Reward /> <Contact /> </>} />

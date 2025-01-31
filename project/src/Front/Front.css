@@ -138,6 +138,10 @@
   font-weight: 500;
 }
 
+.trust-container:hover {
+  transform: scale(1.02);
+}
+
 @media (max-width: 1200px) {
   .main-content2 {
     flex-direction: column;
@@ -182,6 +186,7 @@
   .watch-intro-btn2 {
     width: 100%;
   }
+  
 
   .circular-images {
     height: auto;

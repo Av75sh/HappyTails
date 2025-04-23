@@ -53,6 +53,14 @@
   padding: 3rem;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .profile-image {
@@ -100,5 +108,9 @@
 
   .testimonial-card {
     padding: 1.5rem;
+  }
+
+  .feedback-header {
+    text-align: left;
   }
 }

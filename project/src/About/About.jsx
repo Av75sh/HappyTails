@@ -1,17 +1,18 @@
 import React from 'react';
 import './About.css';
+import HappyTails from './happy.png';
 
 function About() {
   const features = [
-    { icon: "🐾", title: "Expert Caretakers" },
-    { icon: "🛡️", title: "Safe and Secure" },
+    { icon: "📱", title: "Social Events" },
+    { icon: "🛡️", title: "Safe Boarding" },
     { icon: "🦆", title: "Wellness & Relaxation" },
     { icon: "🌠", title: "Luxurious Experience" },
-    { icon: "🤞🏻", title: "24/7 Pet Monitoring" },
-    { icon: "🌄", title: "Pet Daycare" },
+    { icon: "🤞🏻", title: "Pet Monitoring" },
+    { icon: "🐾", title: "Expert Caretakers" },
     { icon: "💝", title: "Pet Products" },
-    { icon: "📱", title: "Pet Social Events" },
-    { icon: "💪", title: "Pet Fitness Program" },
+    { icon: "🌄", title: "Pet Grooming" },
+    { icon: "💪", title: "Fitness Program" },
     { icon: "🚄", title: "Travel & Vacation" }
   ];
 
@@ -19,27 +20,13 @@ function About() {
     <div className="about-container">
       <div className="about-content">
 
-        {/* Illustration Section */}
         <div className="illustration">
           <div className="iphone-container">
             <div className="iphone-frame">
               <div className="notch"></div>
               <div className="screen">
-                <div className="chat-content">
-                  <div className="chat-bubble user">
-                    <span className="sender">You</span>
-                    <p>
-                      <span>Hi, I am Avinash and I </span>
-                      <span className="text-red">present you HappyTails</span>
-                    </p>
-                  </div>
-                  <div className="chat-bubble ai">
-                    <span className="sender">HappyTails</span>
-                    <p>
-                      It's a second home for your pet where they can feel at home. We take good care and provide nourishment to your loved ones.
-                    </p>
-                  </div>
-                </div>
+              <img src={HappyTails} alt="Screen Content" className="screen-image" />
+                
                 <div className="mic-button">
                   <div className="mic-icon"></div>
                 </div>
@@ -48,12 +35,10 @@ function About() {
           </div>
         </div>
 
-        {/* About Text Section */}
         <div className="about-text">
           <h2 className="about-heading">ABOUT US</h2>
           <h1 className="main-heading">
-            We Love to <span className="highlight">Take Care</span>
-            <br />of Your Pets
+            We Love to <span className="highlight">Take Care</span> of Your Pets
           </h1>
 
           <p className="description">

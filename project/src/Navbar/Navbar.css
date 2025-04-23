@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 1000;
+    z-index: 10;
   }
   
   .logo {
@@ -50,16 +50,13 @@
     background-color: #f0f0f0;
     transition: background-color 0.3s ease;
   }
-  
-  
-  
+ 
   .cart-link {
     position: relative;
     font-size: 1.8rem;
     cursor: pointer;
   }
   
-
   .cart-count {
     background-color: red;
     color: white;
@@ -71,3 +68,92 @@
     right: 5px;
   }
   
+  .menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 4px 7px;
+  }
+
+  
+  @media (max-width: 700px) {
+    .nav-links {
+      position: absolute;
+      top: 68px; /* Lowered to make header visible */
+      left: -100%;
+      background: black;
+      width: 65%;
+      height: calc(100vh - 70px); /* Adjusted height */
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      transition: left 0.3s ease;
+      z-index: 999;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Added Box Shadow */
+    }
+  
+    .nav-links.open {
+      left: 0;
+    }
+  
+    .menu {
+      display: block;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  
+    .menu-bar {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
+  
+    .menu.toggle .bar1 {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .menu.toggle .bar2 {
+      opacity: 0;
+    }
+  
+    .menu.toggle .bar3 {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  
+
+  @media (max-width: 700px) {
+    .logo {
+      order: 2;
+      margin-right: 60px;
+    }
+  
+    .menu {
+      order: 1;
+      margin-left: -30px;
+    }
+  }

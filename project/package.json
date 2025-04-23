@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.3.0",
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "gsap": "^3.12.7",
     "i": "^0.3.7",
     "lucide-react": "^0.474.0",
     "react": "^18.3.1",

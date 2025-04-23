@@ -23,8 +23,7 @@
 
 .content-wrapper {
   max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: -150px;
+  margin-bottom: -15px;
 }
 
 .content-wrapper h1 {
@@ -65,11 +64,15 @@
 .contact-btn3 {
   background-color: #0B2A49;
   color: white;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .reserve-btn {
   background-color: #FF7F50;
   color: white;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Bottom Section Styles */
@@ -161,7 +164,28 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
+  .top-section {
+    text-align: left;
+    padding: 3rem;
+  }
+  .contact-info {
+    margin-bottom: 10px;
+  }
+  
+  .content-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .content-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .button-group {
+    margin-left: -10px;
+    width: 110%;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -169,18 +193,37 @@
 
   .social-links {
     justify-content: center;
+    margin-left: -230px;
   }
 
-  .button-group {
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: -50px;
+  }
+
+  .footer-bottom {
+    margin-left: -50px;
+    margin-bottom: 30px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: -50px;
+    margin-bottom: 5px;
+  }
+  
+  .logo {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: -70px;
   }
-
-  .content-wrapper h1 {
-    font-size: 2rem;
-  }
-
-  .content-wrapper h2 {
-    font-size: 1.5rem;
+  .tagline {
+    margin-left: -70px;
+    text-align: left;
   }
 }

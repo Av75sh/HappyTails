@@ -35,8 +35,7 @@ const Feedback = () => {
         <div className="feedback-header">
           <div className="testimonial-tag">OUR TESTIMONIAL</div>
           <h1 className="feedback-title">
-            Pawsitive Feedback from<br />
-            Our <span className="highlight">HappyTails Families</span>
+            Pawsitive Feedback from Our <span className="highlight">HappyTails Families</span>
           </h1>
           <p className="feedback-subtitle">
             Read the heartfelt experiences shared by our satisfied pet parents.

@@ -1,8 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Appointment.css';
 import S5 from '../aa-image/assets-service/service5.png';
 
 const Appointment = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: '',
     applicationType: '',
@@ -288,7 +293,12 @@ const Appointment = () => {
               onChange={handleInputChange}
               rows="4"
               placeholder="Please describe the reason for your appointment..."
+              minLenght="20"
+              required
             />
+            {formData.message.length > 0 && formData.message.length < 20 && (
+              <p style={{ color: "red"}}>Message must be atleast 20 characters long.</p>
+            )}
           </div>
 
           <div className="captcha-container">

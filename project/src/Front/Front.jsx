@@ -1,7 +1,5 @@
-import Appointment from '../Form/Appointment';
 import './Front.css'
 import { NavLink } from 'react-router-dom';
-
 
 import front1 from '../aa-image/assets-front/front1.avif';
 import front2 from '../aa-image/assets-front/front2.avif';
@@ -20,10 +18,10 @@ function Front() {
       <div className="main-content2">
         <div className="text-content">
           <h1>Providing a Stress-Free<br />Pets Experience</h1>
-          <p>We offer a range of services to ensure your pets receive<br />the best care possible.</p>
+          <p>We offer a range of services to ensure your pets receive the best care possible.</p>
           
           <div className="cta-section2">
-            
+        
             <NavLink to="/Appointment">
             <button className="book-now-btn2">Book Now</button>
             </NavLink>

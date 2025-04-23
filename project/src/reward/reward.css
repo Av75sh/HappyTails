@@ -1,16 +1,6 @@
-
-.reward-container {
-  display: block;
-  padding: 10px;
-  max-width: 1318px;
-  margin: 0 auto;
-  position: relative;
-}
-
-
 .top2-section {
-  
-  text-align: left;
+  padding: 4rem;
+  text-align: center;
   margin-left: 10px;
   margin-bottom: 4rem;
 }
@@ -29,166 +19,195 @@
   color: #FF5733;
 }
 
-.user-quote {
-  color: #64748B;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
 
-/* Bottom Section Styles */
-.bottom2-section {
+.services2 {
   background-color: white;
-  height: 60vh;
+}
+
+.services-header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
 }
 
-.ai-teacher-container {
-  text-align: left;
+.services-header {
+  flex: 1;
+  padding: 20px;
 }
 
-.advanced-text {
-  color: #1E293B;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+.services-image {
+  flex: 1;
+  text-align: right;
 }
 
-.ai-teacher-text {
-  color: #6C2BD9;
-  font-size: 3.5rem;
-  font-weight: bold;
+.services-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
 }
 
-/* iPhone Container Styles */
-.iphone-container {
-  border-radius: 24px;
-  padding: 2rem;
-  width: 400px;
-  margin-left: 35px;
-}
 
-.iphone-frame {
-  background: black;
-  border-radius: 50px;
-  padding: 12px;
-  position: relative;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  border: 1px solid #333;
-}
 
-.notch {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 30px;
-  background-color: black;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  z-index: 2;
-}
+.services-section {
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+    background: url('/images/pet-services-bg.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 60px 20px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .services-content {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .services-header {
+    max-width: 1400px;
+    padding: 0 25px;
+    margin-bottom: 60px;
+  }
+  
+  .services-label {
+    color: #FF7043;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .services-title {
+    font-size: 48px;
+    color: #1A237E;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #FF7043;
+  }
+  
+  .services-description {
+    color: #424242;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .see-more-btn {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .see-more-btn:hover {
+    background-color: #F4511E;
+  }
+  
+  .services-cards-reward {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .service-card-r {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    height: 60vh;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
 
-.screen {
-  background: white;
-  border-radius: 40px;
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  padding: 40px 20px 20px;
-}
+  .service-card-r:hover {
+    transform: translateY(-10px);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .card-r-icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    background: #F5F5F5;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
-.chat-content {
-  height: calc(100% - 70px);
-  overflow-y: auto;
-  padding: 1rem;
-}
+  }
+  
+  .card-r-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .service-card-r h3 {
+    color: #1A237E;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 
-/* Chat Bubbles */
-.chat-bubble {
-  margin-bottom: 1rem;
-  max-width: 80%;
-}
+  .n-package {
+    text-decoration: none;
+  }
+  #u-reward {
+    text-align: left;
+    padding-left: 1rem;
+  }
 
-.chat-bubble .sender {
-  font-size: 0.875rem;
-  color: #64748B;
-  margin-bottom: 0.25rem;
-  display: block;
-}
-
-.chat-bubble p {
-  margin: 0;
-  padding: 0.75rem 1rem;
-  border-radius: 12px;
-  font-size: 0.875rem;
-  line-height: 1.4;
-}
-
-.chat-bubble.user p {
-  background-color: #F8FAFC;
-  color: #1E293B;
-}
-
-.chat-bubble.ai p {
-  background-color: #F8FAFC;
-  color: #1E293B;
-}
-
-.text-red {
-  color: #EF4444;
-}
-
-/* Mic Button */
-.mic-button {
-  width: 48px;
-  height: 48px;
-  background: #10B981;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 3rem;
-  right: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.mic-icon {
-  width: 24px;
-  height: 24px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .reward-container {
+  #h-reward {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1E293B;
+    font-weight: bold;
+  }
+  
+  .service-card-r p {
+    color: #616161;
+    font-size: 16px;
+    line-height: 1.5;
     padding: 1rem;
   }
   
-  .headline {
-    font-size: 2.5rem;
+  @media (max-width: 700px) {
+    .services-cards-reward {
+      grid-template-columns: 1fr;
+    }
+
+    .headline {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .service-card-r {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 20px;
+      width: 80vw;
+      height: 100%;
+      margin-left: -50px;
+    }
+    
+    .services-title {
+      font-size: 36px;
+    }
+    
+    .services-description {
+      font-size: 16px;
+    }
   }
-  
-  .bottom-section {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .ai-teacher-container {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .iphone-container {
-    width: 100%;
-    max-width: 350px;
-  }
-  
-  .screen {
-    height: 600px;
-  }
-}

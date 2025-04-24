@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Appointment.css';
+import "./Appointment.css";
 import S5 from '../aa-image/assets-service/service5.png';
 
 const Appointment = () => {

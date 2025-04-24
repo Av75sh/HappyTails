@@ -1,5 +1,5 @@
 import React from 'react';
-import './contact.css';
+import "./contact.css";
 import avinash from '../aa-image/assets-feed/avinash.jpg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 

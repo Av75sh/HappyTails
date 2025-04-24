@@ -1,5 +1,5 @@
 import React from 'react';
-import './feedback.css';
+import "./feedback.css";
 import ankit from '../aa-image/assets-feed/ankit.png';
 import anup from '../aa-image/assets-feed/anup.png';
 import abhinav from '../aa-image/assets-feed/abhinav.png';

@@ -1,4 +1,4 @@
-import './Front.css'
+import "./Front.css";
 import { NavLink } from 'react-router-dom';
 
 import front1 from '../aa-image/assets-front/front1.avif';

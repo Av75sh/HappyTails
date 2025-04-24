@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './service.css';
+import "./service.css";
 import { NavLink } from 'react-router-dom';
 
 import pet3 from '../aa-image/assets/pet3.jpg';
@@ -11,7 +11,6 @@ import service5 from '../aa-image/assets-service/service5.png';
 import service6 from '../aa-image/assets-service/service6.jpg';
 
 const Service = () => {
-  // Scroll to the top when this component is rendered
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
